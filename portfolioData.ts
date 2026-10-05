@@ -1,0 +1,211 @@
+import { Project, SkillCategory, Certificate, EducationItem } from '../types/portfolio';
+
+export const PERSONAL_INFO = {
+  name: 'Kuldeep Singh',
+  role: 'BCA Scholar & Aspiring Data Analyst',
+  subRole: 'Software Developer · Data & Web Solutions',
+  tagline: 'Transforming complex data and algorithmic logic into intuitive, high-performance digital experiences.',
+  bio: 'Motivated Bachelor of Computer Applications (BCA) student with foundational mastery in Python, Java, C/C++, SQL, MS Excel, and modern web technologies. Passionate about uncovering actionable data insights, building robust algorithms, and developing responsive web applications that solve real-world problems.',
+  email: 'kuldeep0203singh@gmail.com',
+  phone: '+91 9680820316',
+  location: 'Sirohi, Rajasthan – 307510',
+  linkedinUrl: 'https://www.linkedin.com/in/kuldeep-singh-6874a1352',
+  githubUrl: 'https://github.com/kuldeep223345',
+  githubUser: 'kuldeep223345',
+  whatsappUrl: 'https://wa.me/919680820316?text=Hi%20Kuldeep,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect!',
+  avatarImage: '/src/assets/images/hero_kuldeep_developer_1791173349014.jpg',
+  stats: [
+    { label: 'Core Languages', value: '4+' },
+    { label: 'Web & Data Projects', value: '5+' },
+    { label: 'Industry Certifications', value: '4' },
+    { label: 'Academic Standing', value: 'BCA Running' },
+  ],
+};
+
+export const PROJECTS: Project[] = [
+  {
+    id: 'c-guru',
+    title: 'C-Guru — Interactive C Programming Hub',
+    category: 'Educational',
+    description: 'A comprehensive interactive educational web application designed for students and novice programmers to master C programming concepts, control structures, pointers, memory allocation, and data structures through structured modules.',
+    highlights: [
+      'Comprehensive topic-wise C programming roadmaps & syntax explanations',
+      'Clean syntax-highlighted code examples with expected output previews',
+      'Optimized for both desktop and mobile study sessions',
+      'Deployed on GitHub Pages with instant accessibility',
+    ],
+    techStack: ['HTML5', 'CSS3', 'JavaScript', 'C Programming', 'GitHub Pages'],
+    liveUrl: 'https://kuldeep332245.github.io/c-guru/',
+    githubUrl: 'https://github.com/kuldeep332245/c-guru',
+    imageUrl: '/src/assets/images/project_cguru_preview_1791173367723.jpg',
+    featured: true,
+  },
+  {
+    id: 'car-garage',
+    title: 'Car Garage — Auto Workshop & Service Hub',
+    category: 'Web Application',
+    description: 'A modern, responsive web application for automotive garages and vehicle service centers. Features service scheduling catalogs, vehicle diagnostics overviews, pricing estimates, and customer booking inquiries.',
+    highlights: [
+      'Dynamic service catalog featuring periodic maintenance, denting & painting, and diagnostics',
+      'Intuitive service booking interface with clear contact touchpoints',
+      'Mobile-first responsive layout with fast loading performance',
+      'Interactive customer inquiry flow and workshop location integration',
+    ],
+    techStack: ['HTML5', 'CSS3', 'JavaScript', 'Responsive UI', 'GitHub Pages'],
+    liveUrl: 'https://kuldeep332245.github.io/car-garage/',
+    githubUrl: 'https://github.com/kuldeep332245/car-garage',
+    imageUrl: '/src/assets/images/project_cargarage_preview_1791173383765.jpg',
+    featured: true,
+  },
+  {
+    id: 'oibsip',
+    title: 'OIBSIP — Web Development Internship Showcase',
+    category: 'Web Application',
+    description: 'A curated multi-utility web application developed during the Oasis Infobyte Summer Internship Program (OIBSIP). Implements modular front-end utilities including interactive calculators, conversion tools, and responsive components.',
+    highlights: [
+      'Implemented clean modular JavaScript architecture for algorithmic computations',
+      'Responsive interactive calculators and converter widgets with zero latency',
+      'Consistent design system adhering to modern web usability standards',
+      'Demonstrated structured Git workflow and continuous deployment',
+    ],
+    techStack: ['JavaScript', 'HTML5', 'CSS3', 'DOM Manipulation', 'GitHub Pages'],
+    liveUrl: 'https://kuldeep332245.github.io/OIBSIP/',
+    githubUrl: 'https://github.com/kuldeep332245/OIBSIP',
+    imageUrl: '/src/assets/images/project_oibsip_preview_1791173395836.jpg',
+    featured: true,
+  },
+  {
+    id: 'ai-resume-builder',
+    title: 'AI Resume Builder — Dynamic Curriculum Vitae Platform',
+    category: 'Web Application',
+    description: 'A modern resume-building application concept designed to empower job seekers and students to construct ATS-friendly professional resumes through a guided step-by-step form workflow with instant live layout preview.',
+    highlights: [
+      'Planned structured modules for personal information, education, skills, projects, and certifications',
+      'Real-time split-screen resume layout preview and PDF generation pipeline concept',
+      'Engineered with modern component architecture using React and Vite tooling',
+      'Clean typography and spacing adhering to recruiter screening criteria',
+    ],
+    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'PDF Generation'],
+    liveUrl: 'https://kuldeep332245.github.io/c-guru/', // fallback / demo
+    githubUrl: 'https://github.com/kuldeep223345',
+    imageUrl: '/src/assets/images/project_resume_builder_preview_1791173409334.jpg',
+    featured: false,
+  },
+];
+
+export const SKILL_CATEGORIES: SkillCategory[] = [
+  {
+    title: 'Programming Languages',
+    iconName: 'Code2',
+    skills: [
+      { name: 'Python', level: 'Proficient', details: 'Data scripting, automation, analytical problem-solving, OOP' },
+      { name: 'C / C++', level: 'Proficient', details: 'Core syntax, pointers, memory management, algorithmic logic' },
+      { name: 'Java', level: 'Proficient', details: 'OOP principles, inheritance, polymorphism, exception handling' },
+      { name: 'JavaScript / TypeScript', level: 'Proficient', details: 'ES6+, DOM manipulation, asynchronous programming, typed interfaces' },
+    ],
+  },
+  {
+    title: 'Data & Analytics',
+    iconName: 'BarChart3',
+    skills: [
+      { name: 'SQL & Relational DBs', level: 'Proficient', details: 'SELECT queries, joins, aggregations, database schema fundamentals' },
+      { name: 'MS Excel', level: 'Advanced', details: 'Formulas, VLOOKUP, pivot tables, data cleaning, summary charts' },
+      { name: 'Data Interpretation', level: 'Proficient', details: 'Extracting actionable metrics, trend identification, reporting' },
+      { name: 'Analytical Thinking', level: 'Advanced', details: 'Quantitative analysis, structured problem decomposition' },
+    ],
+  },
+  {
+    title: 'Web & Development Tools',
+    iconName: 'Globe',
+    skills: [
+      { name: 'React & Vite', level: 'Proficient', details: 'Component lifecycle, hooks, state management, modern SPA bundler' },
+      { name: 'Tailwind CSS & Modern CSS', level: 'Advanced', details: 'Responsive layouts, flexbox, grid, glassmorphism, 3D CSS' },
+      { name: 'Git & GitHub', level: 'Proficient', details: 'Version control, branch management, pull requests, GitHub Pages' },
+      { name: 'Tally ERP', level: 'Proficient', details: 'Financial accounting, vouchers, ledger management, business records' },
+    ],
+  },
+  {
+    title: 'Problem Solving & Professional Skills',
+    iconName: 'Cpu',
+    skills: [
+      { name: 'Object-Oriented Programming', level: 'Proficient', details: 'Encapsulation, abstraction, clean modular code design' },
+      { name: 'Debugging & Code Inspection', level: 'Proficient', details: 'Step-by-step logic tracing, performance tuning' },
+      { name: 'Communication & Teamwork', level: 'Advanced', details: 'Cross-functional collaboration, technical articulation' },
+      { name: 'Adaptability & Quick Learning', level: 'Advanced', details: 'Rapid assimilation of emerging frameworks and tools' },
+    ],
+  },
+];
+
+export const CERTIFICATIONS: Certificate[] = [
+  {
+    id: 'rscit',
+    title: 'RS-CIT (Rajasthan State Certificate in IT)',
+    issuer: 'Vardhaman Mahaveer Open University & RKCL',
+    category: 'Computer Science & IT Fundamentals',
+    date: 'Certified',
+    description: 'Recognized statewide certificate validating foundational IT competencies, office productivity suites, digital literacy, database basics, and operating systems.',
+    skillsCovered: ['Computer Hardware & OS', 'MS Office & Excel', 'Cyber Security Basics', 'Internet & E-Governance'],
+    credentialId: 'RKCL-RSCIT-2023-VERIFIED',
+    badgeColor: 'emerald',
+  },
+  {
+    id: 'tally-erp',
+    title: 'Tally ERP Professional Certification',
+    issuer: 'Authorized Tally Academy / Vocational Training',
+    category: 'Business Accounting & ERP',
+    date: 'Certified',
+    description: 'Comprehensive certification in business accounting software, financial statements, balance sheet preparation, GST reconciliation, and inventory tracking.',
+    skillsCovered: ['Ledger & Voucher Creation', 'Inventory Management', 'GST & Taxation Basics', 'Trial Balance'],
+    credentialId: 'TALLY-ERP9-ACCREDITED',
+    badgeColor: 'amber',
+  },
+  {
+    id: 'python-prog',
+    title: 'Python Programming Certification',
+    issuer: 'Professional Technical Certification',
+    category: 'Programming & Logic',
+    date: 'Certified',
+    description: 'Rigorous assessment in core Python syntax, control structures, list comprehensions, file handling, and foundational algorithmic problem-solving.',
+    skillsCovered: ['Data Structures in Python', 'Functions & Modules', 'Exception Handling', 'File I/O'],
+    credentialId: 'PY-DEV-FOUNDATION',
+    badgeColor: 'cyan',
+  },
+  {
+    id: 'oops-java',
+    title: 'Object-Oriented Programming (OOPs) in Java',
+    issuer: 'Technical Computing Institute',
+    category: 'Software Engineering',
+    date: 'Certified',
+    description: 'In-depth certification in object-oriented paradigm using Java, focusing on classes, inheritance hierarchies, polymorphism, interfaces, and memory models.',
+    skillsCovered: ['Inheritance & Interfaces', 'Polymorphism & Abstraction', 'Packages & Encapsulation', 'Java Memory Basics'],
+    credentialId: 'JAVA-OOP-CORE',
+    badgeColor: 'indigo',
+  },
+];
+
+export const EDUCATION_DATA: EducationItem[] = [
+  {
+    degree: 'Bachelor of Computer Applications (BCA)',
+    institution: 'Adarsh College of Professional Studies',
+    period: '2025 – 2028',
+    score: 'First Division (Running)',
+    status: 'Running',
+    details: 'Focusing on Computer Architecture, Database Management Systems, Data Structures & Algorithms, Object-Oriented Programming in C++ & Java, Web Technologies, and Data Analytics.',
+  },
+  {
+    degree: 'Higher Secondary (12th RBSE)',
+    institution: 'Govt. S.S.S. Achpura',
+    period: '2022',
+    score: '72.00%',
+    status: 'Completed',
+    details: 'Completed senior secondary curriculum under Rajasthan Board of Secondary Education with academic distinction in analytical and science subjects.',
+  },
+  {
+    degree: 'Secondary School (10th RBSE)',
+    institution: 'Govt. S.S.S. Achpura',
+    period: '2020',
+    score: '55.83%',
+    status: 'Completed',
+    details: 'Foundational secondary school education under Rajasthan Board with emphasis on mathematics, science, and computer literacy.',
+  },
+];
